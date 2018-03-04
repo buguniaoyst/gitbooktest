@@ -6,7 +6,7 @@
     * [1.1 什么是机器学习](11-shi-yao-shi-ji-qi-xue-xi.md)
     * [1.2 关键术语](12-guan-jian-zhu-yu.md)
     * [1.3 机器学习的主要任务](13-ji-qi-xue-xi-de-zhu-yao-ren-wu.md)
-    * 1.4 如何选择合适的算法
+    * [1.4 如何选择合适的算法](14-ru-he-xuan-ze-he-shi-de-suan-fa.md)
     * 1.5 开发机器学习应用程序的步骤
     * [1.6 Python语言的优势](16-pythonyu-yan-de-you-shi.md)
     * [1.7 Numpy函数库基础](17-numpyhan-shu-ku-ji-chu.md)
