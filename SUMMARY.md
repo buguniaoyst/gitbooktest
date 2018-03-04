@@ -1,3 +1,10 @@
 # Table of content
 
-* [First Chapter](chapter1.md)
+* 【第一部分】 分类
+
+* 【第二部分】 利用回归预测数值型数据
+* 【第三部分】 无监督学习
+* 【第四部分】 其他工具
+
+
+
