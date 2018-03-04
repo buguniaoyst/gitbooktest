@@ -8,9 +8,9 @@
     * 1.3 机器学习的主要任务
     * 1.4 如何选择合适的算法
     * 1.5 开发机器学习应用程序的步骤
-    * 1.6 Python语言的优势
-    * 1.7 Numpy函数库基础
-    * 1.8 本章小结
+    * [1.6 Python语言的优势](16-pythonyu-yan-de-you-shi.md)
+    * [1.7 Numpy函数库基础](17-numpyhan-shu-ku-ji-chu.md)
+    * [1.8 本章小结](18-ben-zhang-xiao-jie.md)
   * [第2章 K-近邻算法](di-2-zhang-k-jin-lin-suan-fa.md)
   * 第3章 决策树
   * 第4章 基于概率论的分类方法：朴素贝叶斯
