@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * 【第一部分】 分类
-  * 第1章 机器学习基础
+  * [第1章 机器学习基础](di-1-zhang-ji-qi-xue-xi-ji-chu.md)
     * [1.1 什么是机器学习](11-shi-yao-shi-ji-qi-xue-xi.md)
     * [1.2 关键术语](12-guan-jian-zhu-yu.md)
     * 1.3 机器学习的主要任务
@@ -11,7 +11,7 @@
     * 1.6 Python语言的优势
     * 1.7 Numpy函数库基础
     * 1.8 本章小结
-  * 第2章 K-近邻算法
+  * [第2章 K-近邻算法](di-2-zhang-k-jin-lin-suan-fa.md)
   * 第3章 决策树
   * 第4章 基于概率论的分类方法：朴素贝叶斯
   * 第5章 Logistic回归
