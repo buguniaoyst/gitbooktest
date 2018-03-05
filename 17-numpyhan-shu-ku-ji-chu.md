@@ -22,7 +22,7 @@ from numpy import *
 
 ### 2 使用NumPy函数库构造一个4\*4的随机数组
 
-```
+```py
 random.rand(4,4)
 ```
 
