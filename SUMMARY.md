@@ -11,7 +11,11 @@
     * [1.6 Python语言的优势](16-pythonyu-yan-de-you-shi.md)
     * [1.7 Numpy函数库基础](17-numpyhan-shu-ku-ji-chu.md)
     * [1.8 本章小结](18-ben-zhang-xiao-jie.md)
-  * [第2章 K-近邻算法](di-2-zhang-k-jin-lin-suan-fa.md)
+  * [第2章 k-近邻算法](di-2-zhang-k-jin-lin-suan-fa.md)
+    * 2.1 k-邻近值算法概述
+    * 2.2 示例：使用k-邻近值算法改进约会网站的配对效果
+    * 2.3 示例：手写识别系统
+    * 2.4 本章小结
   * 第3章 决策树
   * 第4章 基于概率论的分类方法：朴素贝叶斯
   * 第5章 Logistic回归
