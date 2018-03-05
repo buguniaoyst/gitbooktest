@@ -16,3 +16,7 @@ NumPy函数库的下载地址：[https://pypi.python.org/pypi/numpy](https://pyp
 
 ### 1 引入NumPy函数库
 
+    from numpy import \*
+
+
+
