@@ -18,5 +18,13 @@
 
 为了方便使用createDataSet\(\)函数，它创建数据集和标签，如图2-1所示。然后依次执行以下步骤：保存kNN.py文件的位置，打开Python开发环境，进入Python的交互模式，输入一下命令导入上面编辑的程序模块：
 
-    import kNN
+```
+import kNN
+```
+
+上述命令导入kNN模块。为了确保输入相同的数据集，kNN模块中定义 了函数createDataSet，在Python命令提示符下输入下列命令：
+
+    group,labels = kNN.createDataSet\(\)
+
+
 
