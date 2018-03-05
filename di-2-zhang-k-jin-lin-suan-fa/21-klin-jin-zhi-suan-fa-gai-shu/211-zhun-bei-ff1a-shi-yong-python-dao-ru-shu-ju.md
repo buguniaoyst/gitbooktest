@@ -28,5 +28,7 @@ import kNN
 group,labels = kNN.createDataSet()
 ```
 
+上述命令创建了变量group和labels，在Python命令提示符下，输入变量的名字以检验是否正确地定义变量
 
+group
 
