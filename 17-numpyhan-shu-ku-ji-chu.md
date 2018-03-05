@@ -12,3 +12,7 @@ NumPy函数库的下载地址：[https://pypi.python.org/pypi/numpy](https://pyp
 
 打开CMD，输入： pip install D:\python3.6.1\Scripts\numpy-1.13.0rc2-cp36-none-win\_amd64.whl
 
+
+
+## 测试
+
