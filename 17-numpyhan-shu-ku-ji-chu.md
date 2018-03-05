@@ -16,7 +16,13 @@ NumPy函数库的下载地址：[https://pypi.python.org/pypi/numpy](https://pyp
 
 ### 1 引入NumPy函数库
 
-    from numpy import \*
+```py
+from numpy import *
+```
+
+### 2 使用NumPy函数库构造一个4\*4的随机数组
+
+    random.rand\(4,4\)
 
 
 
