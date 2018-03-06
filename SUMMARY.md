@@ -21,7 +21,7 @@
       * [2.2.2 分析数据](di-2-zhang-k-jin-lin-suan-fa/22-shi-li-ff1a-shi-yong-k-lin-jin-zhi-suan-fa-gai-jin-yue-hui-wang-zhan-de-pei-dui-xiao-guo/222-fen-xi-shu-ju.md)
       * [2.2.3 准备数据](di-2-zhang-k-jin-lin-suan-fa/22-shi-li-ff1a-shi-yong-k-lin-jin-zhi-suan-fa-gai-jin-yue-hui-wang-zhan-de-pei-dui-xiao-guo/223-zhun-bei-shu-ju.md)
       * [2.2.4 测试算法](di-2-zhang-k-jin-lin-suan-fa/22-shi-li-ff1a-shi-yong-k-lin-jin-zhi-suan-fa-gai-jin-yue-hui-wang-zhan-de-pei-dui-xiao-guo/224-ce-shi-suan-fa.md)
-      * 2.2.5 使用算法
+      * [2.2.5 使用算法](di-2-zhang-k-jin-lin-suan-fa/22-shi-li-ff1a-shi-yong-k-lin-jin-zhi-suan-fa-gai-jin-yue-hui-wang-zhan-de-pei-dui-xiao-guo/225-shi-yong-suan-fa.md)
     * 2.3 示例：手写识别系统
     * 2.4 本章小结
   * 第3章 决策树
@@ -40,6 +40,4 @@
   * 第13章 利用PCA来简化数据
   * 第14章 利用SVD简化数据
   * 第15章 大数据与MapReduce
-
-
 
