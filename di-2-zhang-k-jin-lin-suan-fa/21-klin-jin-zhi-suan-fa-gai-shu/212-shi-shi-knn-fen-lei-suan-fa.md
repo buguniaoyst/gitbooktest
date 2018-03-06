@@ -42,7 +42,5 @@ def classify0(inX,dataSet,labels,k):
     return sortedClassCount[0][0]
 ```
 
-
-
-
+![](/assets/欧氏距离计算公式.png)
 
