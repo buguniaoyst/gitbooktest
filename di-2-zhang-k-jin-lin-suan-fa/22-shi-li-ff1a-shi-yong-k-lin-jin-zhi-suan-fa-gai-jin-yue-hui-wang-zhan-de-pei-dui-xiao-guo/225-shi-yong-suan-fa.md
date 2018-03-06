@@ -20,7 +20,7 @@ def classifyPerson():
 
 输入一下命令：
 
-```
+```py
 >>> kNN.classifyPerson()
 ```
 
