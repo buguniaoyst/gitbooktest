@@ -7,16 +7,18 @@
 ```py
 # 程序清单2-5 约会网站预测函数
 def classifyPerson():
-	resultList = ['not at all','in small doses','in large doses']
-	percentTats = float(input("percentage of time spent playing video games?"))
-	ffMiles = float(input("frequent flier miles earned per year?"))
-	iceCream = float(input("liters of ice cream consumed per year?"))
-	datingDataMat,datingLabels = file2matrix('datingTestSet2.txt')
-	normMat,ranges,minVals = autoNorm(datingDataMat)
-	inArr = array([ffMiles,percentTats,iceCream])
-	classifilerResult = classify0((inArr-minVals)/ranges,normMat,datingLabels,3)
-	print(resultList[classifilerResult-1])
+    resultList = ['not at all','in small doses','in large doses']
+    percentTats = float(input("percentage of time spent playing video games?"))
+    ffMiles = float(input("frequent flier miles earned per year?"))
+    iceCream = float(input("liters of ice cream consumed per year?"))
+    datingDataMat,datingLabels = file2matrix('datingTestSet2.txt')
+    normMat,ranges,minVals = autoNorm(datingDataMat)
+    inArr = array([ffMiles,percentTats,iceCream])
+    classifilerResult = classify0((inArr-minVals)/ranges,normMat,datingLabels,3)
+    print(resultList[classifilerResult-1])
 ```
+
+输入一下命令：
 
 
 
