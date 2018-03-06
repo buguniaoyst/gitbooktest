@@ -14,7 +14,7 @@
   * [第2章 k-近邻算法](di-2-zhang-k-jin-lin-suan-fa.md)
     * [2.1 k-邻近值算法概述](di-2-zhang-k-jin-lin-suan-fa/21-klin-jin-zhi-suan-fa-gai-shu.md)
       * [2.1.1 准备：使用Python导入数据](di-2-zhang-k-jin-lin-suan-fa/21-klin-jin-zhi-suan-fa-gai-shu/211-zhun-bei-ff1a-shi-yong-python-dao-ru-shu-ju.md)
-      * 2.1.2 实施kNN分类算法
+      * [2.1.2 实施kNN分类算法](di-2-zhang-k-jin-lin-suan-fa/21-klin-jin-zhi-suan-fa-gai-shu/212-shi-shi-knn-fen-lei-suan-fa.md)
       * 2.1.3 如何测试分类器
     * 2.2 示例：使用k-邻近值算法改进约会网站的配对效果
     * 2.3 示例：手写识别系统
