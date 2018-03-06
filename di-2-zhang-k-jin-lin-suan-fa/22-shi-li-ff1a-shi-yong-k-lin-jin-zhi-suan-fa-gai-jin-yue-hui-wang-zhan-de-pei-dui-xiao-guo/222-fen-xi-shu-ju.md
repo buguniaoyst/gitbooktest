@@ -16,5 +16,18 @@
 
 安装完成后，在Python命令行环境中，输入下列命令：
 
+```py
+>>> import kNN
+>>> datingDataMat,datingLabels = kNN.file2matrix('datingTestSet2.txt')
+>>> import matplotlib
+>>> import matplotlib.pyplot as plt
+>>> fig = plt.figure()
+>>> ax = fig.add_subplot(111)
+>>> ax.scatter(datingDataMat[:,1],datingDataMat[:,2])
+<matplotlib.collections.PathCollection object at 0x0000019BD5871240>
+>>> plt.show()
+>>>
+```
+
 
 
