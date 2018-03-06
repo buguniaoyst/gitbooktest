@@ -1,6 +1,10 @@
 # 数据分析：使用Matplotlib创建散点图
 
-首先我们使用Matplotlib制作原始数据散点图，在Python命令行环境中，输入下列命令：
+首先我们使用Matplotlib制作原始数据散点图，使用Matplotlib库之前需要先安装。
+
+## 下载Matplotlib库
+
+下载地址：https://pypi.python.org/pypi/matplotlib
 
 
 
