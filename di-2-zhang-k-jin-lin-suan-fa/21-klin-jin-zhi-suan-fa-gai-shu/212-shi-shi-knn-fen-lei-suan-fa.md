@@ -42,5 +42,5 @@ def classify0(inX,dataSet,labels,k):
     return sortedClassCount[0][0]
 ```
 
-classify0\(\)函数有4个输入参数：用于分类的输入向量是inX，输入的训练样本集为dataSet，标签向量为labels，最后的参数k表示用于选择最近邻居的数目，其中标签向量的元素数目和矩阵dataSet的行数相同。程序
+classify0\(\)函数有4个输入参数：用于分类的输入向量是inX，输入的训练样本集为dataSet，标签向量为labels，最后的参数k表示用于选择最近邻居的数目，其中标签向量的元素数目和矩阵dataSet的行数相同。程序清单2-1使用欧氏距离公式，计算两个向量xA和xB之间的距离：![](/assets/欧氏距离公式.png)
 
