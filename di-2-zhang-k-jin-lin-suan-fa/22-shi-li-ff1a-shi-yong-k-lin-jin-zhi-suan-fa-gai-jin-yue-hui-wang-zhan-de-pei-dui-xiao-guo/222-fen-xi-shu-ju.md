@@ -4,7 +4,7 @@
 
 ## 下载Matplotlib库
 
-下载地址：https://pypi.python.org/pypi/matplotlib
+下载地址：[https://pypi.python.org/pypi/matplotlib](https://pypi.python.org/pypi/matplotlib)
 
-
+下载对应版本的Matplotlib
 
