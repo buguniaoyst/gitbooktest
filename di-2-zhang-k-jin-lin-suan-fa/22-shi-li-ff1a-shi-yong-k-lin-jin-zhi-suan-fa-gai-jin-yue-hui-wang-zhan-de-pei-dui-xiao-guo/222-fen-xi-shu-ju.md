@@ -37,17 +37,18 @@
                                      玩视频游戏所耗时间百分比
 ```
 
-                           图2-3 没有样本类别标签的约会散点图。难以辨识途中的点究竟属于哪个样本分类
-
-
+```
+                       图2-3 没有样本类别标签的约会散点图。难以辨识途中的点究竟属于哪个样本分类
+```
 
 由于没有使用样本分类的特征值，我们很难从图2-3中看到任何有用的数据模式信息。一般来说，我们会采用色彩或其他的记号来标记不同样本分类，以便更好地理解数据信息。Matplotlib库提供的scatter函数支持个性化标记散点图上的点。重新输入上面的代码，调用scatter函数时使用下列参数：
 
-
-
-
-
-
+```py
+>>> ax.scatter(datingDataMat[:,1],datingDataMat[:,2],15.0*array(datingLabels),15.0*array(datingLabels))
+<matplotlib.collections.PathCollection object at 0x000001FE8D94B080>
+>>> plt.show()
+>>>
+```
 
 
 
