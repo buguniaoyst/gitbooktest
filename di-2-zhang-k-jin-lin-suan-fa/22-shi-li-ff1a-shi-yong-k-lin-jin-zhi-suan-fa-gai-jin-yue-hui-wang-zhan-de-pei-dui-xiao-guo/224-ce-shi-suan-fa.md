@@ -7,7 +7,18 @@
 为了测试分类器效果，在kNN.py文件中创建函数datingClassTest,该函数是自包含的，你可以在任何时候在Python运行环境中使用该函数测试分类器的效果。在kNN.py文件中输入下面的程序代码。
 
 ```py
-# 程序清单2-4 分类器针对约会网站的测试代码
+# 程序清单2-4 分类器针对约会网站的测试代码def datingClassTest():
+	hoRatio = 0.10
+	datingDataMat,datingLabels = file2matrix('datingTestSet2.txt')
+	normMat,ranges,minVals = autoNorm(datingDataMat)
+	m = normMat.shape[0]
+	numTestVecs = int(m*hoRatio)
+	errorCount = 0.0
+	for i in range(numTestVecs):
+		classifierResult = classify0(normMat[i,:],normMat[numTestVecs:m,:],datingLabels[numTestVecs:m],3)
+		print("the classifier came back with:%d,the real answer is:%d % (classifierResult,datingLabels[i])")
+		if (classifierResult != datingLabels[i]):errorCount += 1.0 
+	print("the total error rate is:%f" % (errorCount/float(numTestVecs)))
 ```
 
 
