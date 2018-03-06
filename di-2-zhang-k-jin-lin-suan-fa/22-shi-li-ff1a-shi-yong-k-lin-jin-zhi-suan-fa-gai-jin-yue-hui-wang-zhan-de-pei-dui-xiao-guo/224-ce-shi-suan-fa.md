@@ -25,5 +25,13 @@
 
 在Python命令提示符下，执行以下命令：
 
-    a
+```py
+>>> from numpy import *
+>>> import operator
+>>> import kNN
+>>> datingDataMat,datingLabels = kNN.file2matrix('datingTestSet2.txt')
+>>> kNN.datingClassTest()
+```
+
+
 
