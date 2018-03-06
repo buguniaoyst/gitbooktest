@@ -12,7 +12,9 @@
 
 在cmd中输入：pip install D:\python3.6.1\Scripts\[matplotlib-2.2.0-cp36-cp36m-win\_amd64.whl
 
-
-
 ## 使用Matplotlib库创建散点图
+
+在Python命令行环境中，输入下列命令：
+
+
 
