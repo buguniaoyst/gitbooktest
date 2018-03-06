@@ -35,5 +35,23 @@
 
 执行分类器的测试程序，我们将得到下面的输出结果：
 
-    aaa
+```
+...............
+the classifier came back with:%d,the real answer is:%d % (classifierResult,datingLabels[i])
+the classifier came back with:%d,the real answer is:%d % (classifierResult,datingLabels[i])
+the classifier came back with:%d,the real answer is:%d % (classifierResult,datingLabels[i])
+the classifier came back with:%d,the real answer is:%d % (classifierResult,datingLabels[i])
+the classifier came back with:%d,the real answer is:%d % (classifierResult,datingLabels[i])
+the classifier came back with:%d,the real answer is:%d % (classifierResult,datingLabels[i])
+the classifier came back with:%d,the real answer is:%d % (classifierResult,datingLabels[i])
+the classifier came back with:%d,the real answer is:%d % (classifierResult,datingLabels[i])
+the classifier came back with:%d,the real answer is:%d % (classifierResult,datingLabels[i])
+the classifier came back with:%d,the real answer is:%d % (classifierResult,datingLabels[i])
+the classifier came back with:%d,the real answer is:%d % (classifierResult,datingLabels[i])
+the classifier came back with:%d,the real answer is:%d % (classifierResult,datingLabels[i])
+the classifier came back with:%d,the real answer is:%d % (classifierResult,datingLabels[i])
+the total error rate is:0.050000
+```
+
+
 
