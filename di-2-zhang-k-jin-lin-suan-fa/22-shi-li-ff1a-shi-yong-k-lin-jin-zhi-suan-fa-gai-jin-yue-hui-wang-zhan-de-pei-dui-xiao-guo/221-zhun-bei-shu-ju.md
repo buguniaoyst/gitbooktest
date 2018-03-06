@@ -41,5 +41,7 @@ reload(kNN)
 datingDataMat,datingLabels = kNN.file2matrix('datingTestSet2.txt')
 ```
 
-使用函数file2matrix读取文件数据，必须确保文件datingTestSet2.txt存储在我们的工作目录中。此外在执行这个函数之前，我们重新加载了kNN.py
+使用函数file2matrix读取文件数据，必须确保文件datingTestSet2.txt存储在我们的工作目录中。此外在执行这个函数之前，我们重新加载了kNN.py模块，以确保更新的内容可以生效，否则Python将继续使用上次加载的kNN模块。
+
+成功导入datingTestSet.txt文件中的数据之后，可以简单检查一下数据内容。Python的输出结果大致如下
 
