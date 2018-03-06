@@ -33,15 +33,19 @@ newValue = \(oldValue-min\)/\(max-min\)
 ```py
 # 程序清单2-3 归一化特征值
 def autoNorm(dataSet):
-	minVals = dataSet.min(0)
-	maxVals = dataSet.max(0)
-	ranges = maxVals - minVals
-	normDataSet = zeros(shape(dataSet))
-	m = dataSet.shape[0]
-	normDataSet = dataSet - tile(minVals, (m,1))
-	normDataSet = normDataSet/tile(ranges, (m,1))
-	return normDataSet,ranges,minVals
+    minVals = dataSet.min(0)
+    maxVals = dataSet.max(0)
+    ranges = maxVals - minVals
+    normDataSet = zeros(shape(dataSet))
+    m = dataSet.shape[0]
+    normDataSet = dataSet - tile(minVals, (m,1))
+    normDataSet = normDataSet/tile(ranges, (m,1))
+    return normDataSet,ranges,minVals
 ```
 
+在函数autoNorm\(\)中，我们将每列的最小值放在变量minVals中，将最大值放在变量maxVals中，其中dataSet.min\(0\)中的参数0是的函数可以从列中选取最小值，而不是选取当前行的最小值。然后，函数计算可能的取值范围，并创建新的返回矩阵。正如前面给出的公式，为了归一化特征值，我们必须使用当前值减去最小值，然后除以取值范围。需要注意的是，特征值矩阵有1000\*3个值，而minVals和range的值都为1\*3.为了解决这个问题，我们使用NymPy库中的tile\(\)函数将变量内容复制输入矩阵同样大小的矩阵，注意这是具体特征值相除，而对于某些数值处理软件包，/可能意味着矩阵除法，但在NumPy库中，矩阵除法需要使用函数linalg.solve\(matA,matB\)。
 
+在Python命令提示符下，重新加载kNN.py模块，执行autoNorm函数，检测函数的执行结果：
+
+    aa
 
