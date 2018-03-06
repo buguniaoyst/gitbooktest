@@ -30,5 +30,18 @@ newValue = \(oldValue-min\)/\(max-min\)
 
 程序清单2-3提供了函数autoNorm\(\)的代码。
 
-    程序清单2-3 归一化特征值
+```py
+# 程序清单2-3 归一化特征值
+def autoNorm(dataSet):
+	minVals = dataSet.min(0)
+	maxVals = dataSet.max(0)
+	ranges = maxVals - minVals
+	normDataSet = zeros(shape(dataSet))
+	m = dataSet.shape[0]
+	normDataSet = dataSet - tile(minVals, (m,1))
+	normDataSet = normDataSet/tile(ranges, (m,1))
+	return normDataSet,ranges,minVals
+```
+
+
 
