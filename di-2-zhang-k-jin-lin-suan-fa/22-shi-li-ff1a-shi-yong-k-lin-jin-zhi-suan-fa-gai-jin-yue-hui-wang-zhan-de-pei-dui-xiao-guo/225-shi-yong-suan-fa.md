@@ -22,6 +22,10 @@ def classifyPerson():
 
 ```py
 >>> kNN.classifyPerson()
+percentage of time spent playing video games?10
+frequent flier miles earned per year?10000
+liters of ice cream consumed per year?0.5
+in small doses
 ```
 
 
