@@ -20,5 +20,9 @@ def classifyPerson():
 
 输入一下命令：
 
-    q
+```
+>>> kNN.classifyPerson()
+```
+
+
 
