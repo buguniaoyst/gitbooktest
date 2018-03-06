@@ -17,6 +17,7 @@
 Python函数classify0\(\)程序清单2-1所示：
 
 ```py
+#程序清单2-1  k-近邻算法
 from numpy import *
 import operator
 
@@ -24,7 +25,7 @@ def createDataSet():
     group = array([[1.0,1.1],[1.0,1.0],[0,0],[0,0.1]])
     labels = ['A','A','B','B']
     return group, labels
-    
+
 def classify0(inX,dataSet,labels,k):
     dataSetSize = dataSet.shape[0] #dataSet.shape[0] 得到数组的行数
     diffMat = tile(inX,(dataSetSize,1))-dataSet #
@@ -41,5 +42,5 @@ def classify0(inX,dataSet,labels,k):
     return sortedClassCount[0][0]
 ```
 
-
+classify0\(\)函数有4个输入参数：用于分类的输入向量是inX，输入的训练样本集为dataSet，标签向量为labels，最后的参数k表示用于选择最近邻居的数目，其中标签向量的元素数目和矩阵dataSet的行数相同。程序
 
