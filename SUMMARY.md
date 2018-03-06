@@ -18,7 +18,7 @@
       * [2.1.3 如何测试分类器](di-2-zhang-k-jin-lin-suan-fa/21-klin-jin-zhi-suan-fa-gai-shu/213-ru-he-ce-shi-fen-lei-qi.md)
     * [2.2 示例：使用k-邻近值算法改进约会网站的配对效果](di-2-zhang-k-jin-lin-suan-fa/22-shi-li-ff1a-shi-yong-k-lin-jin-zhi-suan-fa-gai-jin-yue-hui-wang-zhan-de-pei-dui-xiao-guo.md)
       * [2.2.1 准备数据](di-2-zhang-k-jin-lin-suan-fa/22-shi-li-ff1a-shi-yong-k-lin-jin-zhi-suan-fa-gai-jin-yue-hui-wang-zhan-de-pei-dui-xiao-guo/221-zhun-bei-shu-ju.md)
-      * 2.2.2 分析数据
+      * [2.2.2 分析数据](di-2-zhang-k-jin-lin-suan-fa/22-shi-li-ff1a-shi-yong-k-lin-jin-zhi-suan-fa-gai-jin-yue-hui-wang-zhan-de-pei-dui-xiao-guo/222-fen-xi-shu-ju.md)
       * 2.2.3 准备数据
       * 2.2.4 测试算法
     * 2.3 示例：手写识别系统
