@@ -50,7 +50,9 @@ def classify0(inX,dataSet,labels,k):
 
 为了预测数据所在分类，在Python提示符中输入下列命令：
 
-    kNN.classify0\(\[0,0\],group,labels,3\)
+```
+kNN.classify0\(\[0,0\],group,labels,3\)
+```
 
-
+输出结果应该是B，也可以改变输入\[0,0\]为其他值，测试程序运行结果。
 
