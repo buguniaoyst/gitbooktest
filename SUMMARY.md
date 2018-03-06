@@ -23,6 +23,8 @@
       * [2.2.4 测试算法](di-2-zhang-k-jin-lin-suan-fa/22-shi-li-ff1a-shi-yong-k-lin-jin-zhi-suan-fa-gai-jin-yue-hui-wang-zhan-de-pei-dui-xiao-guo/224-ce-shi-suan-fa.md)
       * [2.2.5 使用算法](di-2-zhang-k-jin-lin-suan-fa/22-shi-li-ff1a-shi-yong-k-lin-jin-zhi-suan-fa-gai-jin-yue-hui-wang-zhan-de-pei-dui-xiao-guo/225-shi-yong-suan-fa.md)
     * [2.3 示例：手写识别系统](di-2-zhang-k-jin-lin-suan-fa/23-shi-li-ff1a-shou-xie-shi-bie-xi-tong.md)
+      * 2.3.1 准备数据
+      * 2.3.2 测试算法
     * 2.4 本章小结
   * 第3章 决策树
   * 第4章 基于概率论的分类方法：朴素贝叶斯
@@ -40,4 +42,6 @@
   * 第13章 利用PCA来简化数据
   * 第14章 利用SVD简化数据
   * 第15章 大数据与MapReduce
+
+
 
