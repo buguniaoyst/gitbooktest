@@ -32,7 +32,7 @@ group,labels = kNN.createDataSet()
 
 ```
 group
-array([[1. , 1.1],
+结果：array([[1. , 1.1],
        [1. , 1. ],
        [0. , 0. ],
        [0. , 0.1]])
