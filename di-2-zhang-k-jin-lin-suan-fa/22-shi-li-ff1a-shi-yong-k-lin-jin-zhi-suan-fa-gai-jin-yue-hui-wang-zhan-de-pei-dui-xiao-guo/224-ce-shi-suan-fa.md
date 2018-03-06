@@ -8,18 +8,22 @@
 
 ```py
 # 程序清单2-4 分类器针对约会网站的测试代码def datingClassTest():
-	hoRatio = 0.10
-	datingDataMat,datingLabels = file2matrix('datingTestSet2.txt')
-	normMat,ranges,minVals = autoNorm(datingDataMat)
-	m = normMat.shape[0]
-	numTestVecs = int(m*hoRatio)
-	errorCount = 0.0
-	for i in range(numTestVecs):
-		classifierResult = classify0(normMat[i,:],normMat[numTestVecs:m,:],datingLabels[numTestVecs:m],3)
-		print("the classifier came back with:%d,the real answer is:%d % (classifierResult,datingLabels[i])")
-		if (classifierResult != datingLabels[i]):errorCount += 1.0 
-	print("the total error rate is:%f" % (errorCount/float(numTestVecs)))
+    hoRatio = 0.10
+    datingDataMat,datingLabels = file2matrix('datingTestSet2.txt')
+    normMat,ranges,minVals = autoNorm(datingDataMat)
+    m = normMat.shape[0]
+    numTestVecs = int(m*hoRatio)
+    errorCount = 0.0
+    for i in range(numTestVecs):
+        classifierResult = classify0(normMat[i,:],normMat[numTestVecs:m,:],datingLabels[numTestVecs:m],3)
+        print("the classifier came back with:%d,the real answer is:%d % (classifierResult,datingLabels[i])")
+        if (classifierResult != datingLabels[i]):errorCount += 1.0 
+    print("the total error rate is:%f" % (errorCount/float(numTestVecs)))
 ```
 
+函数datingClassTest如程序清单2-4所示，它首先使用了file2matrix和autoNorm函数从文件中读取数据并将其转换为归一化特征值。接着测试向量的数据，此步决定了normMat向量中那些数据用于测试，那些数据用于分类器的训练样本；然后将这两部分数据输入到原始kNN分类器函数classify0。最后，函数计算错误了并输出结果。注意次数我们使用原始分类器。
 
+在Python命令提示符下，执行以下命令：
+
+    
 
