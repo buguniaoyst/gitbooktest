@@ -10,3 +10,7 @@
 
 ## 安装Matplotlib库
 
+在cmd中输入：
+
+
+
