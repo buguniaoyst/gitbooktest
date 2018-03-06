@@ -53,5 +53,13 @@ the classifier came back with:%d,the real answer is:%d % (classifierResult,datin
 the total error rate is:0.050000
 ```
 
+分类器处理约会数据集的错误率是5%。
+
+
+
+
+
+
+
 
 
