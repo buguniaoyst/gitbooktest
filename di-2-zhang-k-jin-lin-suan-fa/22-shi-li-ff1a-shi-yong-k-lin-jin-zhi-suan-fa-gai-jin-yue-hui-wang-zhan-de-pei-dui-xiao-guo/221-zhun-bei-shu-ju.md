@@ -38,7 +38,7 @@ def file2matrix(filename):
 ```py
 reload(kNN)
 
-datingDATAMat，datingLabels = kNN.file2matrix('datingTestSet2.txt')
+datingDataMat，datingLabels = kNN.file2matrix('datingTestSet2.txt')
 ```
 
 
