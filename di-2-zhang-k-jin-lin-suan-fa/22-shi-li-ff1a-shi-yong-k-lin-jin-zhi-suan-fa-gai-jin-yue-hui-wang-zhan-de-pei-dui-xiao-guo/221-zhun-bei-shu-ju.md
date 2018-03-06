@@ -64,17 +64,12 @@ array([[4.0920000e+04, 8.3269760e+00, 9.5395200e-01],
 
 ---
 
-    NumPy数组和Python数组
+```
+                                                  NumPy数组和Python数组
 
-    本书将大量使用NumPy数组，你既可以直接在Python命令行环境中输入from numpy import array将其导入，也可以通过直接导入所有NumPy库内容来将其导入。由于NumPy库提供的数组操作并不支持Python自带的数组类型，因此在编写代码时要注意不要使用错误的数组类型。
-
-
-
-
-
-
-
-
+本书将大量使用NumPy数组，你既可以直接在Python命令行环境中输入from numpy import array将其导入，也可以通过直接导入所有NumPy库内容
+来将其导入。由于NumPy库提供的数组操作并不支持Python自带的数组类型，因此在编写代码时要注意不要使用错误的数组类型。
+```
 
 
 
