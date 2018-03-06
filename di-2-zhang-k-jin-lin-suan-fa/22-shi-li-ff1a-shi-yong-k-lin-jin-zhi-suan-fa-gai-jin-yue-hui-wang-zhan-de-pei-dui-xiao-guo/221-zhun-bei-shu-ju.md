@@ -35,7 +35,11 @@ def file2matrix(filename):
 
 在Python命令提示符下输入下面命令：
 
-    reload\(kNN\)
+```py
+reload(kNN)
 
-    datingDATAMat，datingLabels = kNN.file2matrix\('datingTestSet2.txt'\)
+datingDATAMat，datingLabels = kNN.file2matrix('datingTestSet2.txt')
+```
+
+
 
