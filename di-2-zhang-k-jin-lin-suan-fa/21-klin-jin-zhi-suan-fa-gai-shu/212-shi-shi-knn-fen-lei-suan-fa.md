@@ -44,3 +44,21 @@ def classify0(inX,dataSet,labels,k):
 
 ![](/assets/欧氏距离计算公式.png)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
