@@ -28,5 +28,5 @@ liters of ice cream consumed per year?0.5
 in small doses
 ```
 
-
+目前为止，我们已经看到如何在数据上构建分类器。
 
