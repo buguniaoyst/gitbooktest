@@ -41,5 +41,5 @@ reload(kNN)
 datingDataMat,datingLabels = kNN.file2matrix('datingTestSet2.txt')
 ```
 
-
+使用函数file2matrix读取文件数据，必须确保文件datingTestSet2.txt存储在我们的工作目录中。此外在执行这个函数之前，我们重新加载了kNN.py
 
