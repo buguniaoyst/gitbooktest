@@ -42,15 +42,25 @@ def calcShannonEnt(dataSet):
 
 ```py
 def createDataSet():
-	dataSet = [
-				[1,1,'yes'],
-				[1,1,'yes'],
-				[1,0,'no'],
-				[0,1,'no'],
-				[0,1,'no']
-				]
-	labels = ['no surfacing','flippers']
-	return dataSet,labels
+    dataSet = [
+                [1,1,'yes'],
+                [1,1,'yes'],
+                [1,0,'no'],
+                [0,1,'no'],
+                [0,1,'no']
+                ]
+    labels = ['no surfacing','flippers']
+    return dataSet,labels
+```
+
+在Python命令提示符下输入下列命令：
+
+```py
+>>> import trees
+>>> dataSet,labels = trees.createDataSet()
+>>> trees.calcShannonEnt(dataSet)
+0.46438561897747244
+>>>
 ```
 
 
