@@ -35,3 +35,10 @@ def handwritingClassTest():
 
 在Python命令提示符中输入kNN。handwritingClassTest\(\)，测试该函数的输出结果。依赖于机器速度，加载数据及可能需要花费很长时间，然后函数开始依次测试每个文件，输出结果如下所示：
 
+```py
+>>> import kNN
+>>> kNN.handwritingClassTest()
+```
+
+
+
