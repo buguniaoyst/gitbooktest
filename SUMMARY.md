@@ -28,6 +28,9 @@
     * [2.4 本章小结](di-2-zhang-k-jin-lin-suan-fa/24-ben-zhang-xiao-jie.md)
   * [第3章 决策树](di-3-zhang-jue-ce-shu.md)
     * 3.1 决策树的构造
+      * 3.1.1 信息增益
+      * 3.1.2 划分数据集
+      * 3.1.3 递归构建决策树
     * 3.2 在Python中使用Matplotlib注解绘制树形图
     * 3.3 测试和存储分类器
     * 3.4 示例：使用决策树预测隐形眼镜类型
