@@ -42,3 +42,16 @@ def splitDataSet(dataSet,axis,value):
 
 我们可以在前面的简单样本数据上测试函数splitDataSet\(\)。首先还是要讲程序清单3-2的代码增加到trees.py文件中，然后在Python命令提示符内输入下述命令：
 
+```py
+>>> import trees
+>>> myData,labels = trees.createDataSet()
+>>> myData
+[[1, 1, 'yes'], [1, 1, 'yes'], [1, 0, 'no'], [0, 1, 'no'], [0, 1, 'no']]
+>>> trees.splitDataSet(myData,0,1)
+[[1, 'yes'], [1, 'yes'], [0, 'no']]
+>>> trees.splitDataSet(myData,0,0)
+[[1, 'no'], [1, 'no']]
+```
+
+
+
