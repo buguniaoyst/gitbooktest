@@ -23,5 +23,7 @@ def img2vector(filename):
     return returnVect
 ```
 
+执行以下命令，可得到转换后的向量结果：
+
 
 
