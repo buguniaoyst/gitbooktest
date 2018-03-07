@@ -12,12 +12,37 @@
 
 ```py
 def majorityCnt(classList):
-	classCount = {}
-	for vote in classList:
-		if vote not in classCount.keys():classCount[vote] = 0
-		classCount[vote] += 1
-	sortedClassCount = sorted(classCount.iteritems(),key=operator.itemgetter(1),reverse=True)
-	return sortedClassCount[0][0]
+    classCount = {}
+    for vote in classList:
+        if vote not in classCount.keys():classCount[vote] = 0
+        classCount[vote] += 1
+    sortedClassCount = sorted(classCount.iteritems(),key=operator.itemgetter(1),reverse=True)
+    return sortedClassCount[0][0]
+```
+
+上面的代码与第二章classify0部分的投票表决代码非常类似，该函数使用分类名称的列表，然后创建键值为classList中唯一值的数据字典，字典对象存储了classList中每个标签出现的频率，最后利用operator操作键值排序字典，并返回出现次数最多的分类名称。
+
+在文本编辑器中打开trees.py文件，添加下面的程序代码。
+
+程序清单3-4 创建树的函数代码
+
+```py
+def createTree(dataSet,labels):
+	classList = [example[-1] for example in dataSet]
+	if classList.count(classList[0]) == len(classList):
+		return classList[0]
+	if len(dataSet[0]) == 1:
+		return majorityCnt(classList)
+	bestFeat = chooseBestFeatureToSplit(dataSet)
+	bestFeatLabel = labels[bestFeat]
+	myTree = {bestFeatLabel:{}}
+	del(labels[bestFeat])
+	featValues = [example[bestFeat] for example in dataSet]
+	uniqueVals = set(featValues)
+	for value in uniqueVals:
+		subLabels = labels[:]
+		myTree[bestFeatLabel][value] = createTree(splitDataSet(dataSet,bestFeat,value),subLabels)
+	return myTree
 ```
 
 
