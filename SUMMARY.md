@@ -27,8 +27,8 @@
       * [2.3.2 测试算法](di-2-zhang-k-jin-lin-suan-fa/23-shi-li-ff1a-shou-xie-shi-bie-xi-tong/232-ce-shi-suan-fa.md)
     * [2.4 本章小结](di-2-zhang-k-jin-lin-suan-fa/24-ben-zhang-xiao-jie.md)
   * [第3章 决策树](di-3-zhang-jue-ce-shu.md)
-    * 3.1 决策树的构造
-      * 3.1.1 信息增益
+    * [3.1 决策树的构造](di-3-zhang-jue-ce-shu/31-jue-ce-shu-de-gou-zao.md)
+      * [3.1.1 信息增益](di-3-zhang-jue-ce-shu/31-jue-ce-shu-de-gou-zao/311-xin-xi-zeng-yi.md)
       * 3.1.2 划分数据集
       * 3.1.3 递归构建决策树
     * 3.2 在Python中使用Matplotlib注解绘制树形图
@@ -50,6 +50,4 @@
   * 第13章 利用PCA来简化数据
   * 第14章 利用SVD简化数据
   * 第15章 大数据与MapReduce
-
-
 
