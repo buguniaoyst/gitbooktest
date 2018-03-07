@@ -40,5 +40,22 @@ def handwritingClassTest():
 >>> kNN.handwritingClassTest()
 ```
 
+执行结果如下：
+
+```py
+(0, 0)
+(0, 0)
+(0, 0)
+......
+(9, 9)
+(9, 9)
+(9, 9)
+
+the total number of errors is: 10
+
+ the total error rate is:0.010571
+>>>
+```
+
 
 
