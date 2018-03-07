@@ -29,12 +29,12 @@
   * [第3章 决策树](di-3-zhang-jue-ce-shu.md)
     * [3.1 决策树的构造](di-3-zhang-jue-ce-shu/31-jue-ce-shu-de-gou-zao.md)
       * [3.1.1 信息增益](di-3-zhang-jue-ce-shu/31-jue-ce-shu-de-gou-zao/311-xin-xi-zeng-yi.md)
-      * 3.1.2 划分数据集
-      * 3.1.3 递归构建决策树
-    * 3.2 在Python中使用Matplotlib注解绘制树形图
-    * 3.3 测试和存储分类器
-    * 3.4 示例：使用决策树预测隐形眼镜类型
-    * 3.5 本章小结
+      * [3.1.2 划分数据集](di-3-zhang-jue-ce-shu/31-jue-ce-shu-de-gou-zao/312-hua-fen-shu-ju-ji.md)
+      * [3.1.3 递归构建决策树](di-3-zhang-jue-ce-shu/31-jue-ce-shu-de-gou-zao/313-di-gui-gou-jian-jue-ce-shu.md)
+    * [3.2 在Python中使用Matplotlib注解绘制树形图](di-3-zhang-jue-ce-shu/32-zai-python-zhong-shi-yong-matplotlib-zhu-jie-hui-zhi-shu-xing-tu.md)
+    * [3.3 测试和存储分类器](di-3-zhang-jue-ce-shu/33-ce-shi-he-cun-chu-fen-lei-qi.md)
+    * [3.4 示例：使用决策树预测隐形眼镜类型](di-3-zhang-jue-ce-shu/34-shi-li-ff1a-shi-yong-jue-ce-shu-yu-ce-yin-xing-yan-jing-lei-xing.md)
+    * [3.5 本章小结](di-3-zhang-jue-ce-shu/35-ben-zhang-xiao-jie.md)
   * 第4章 基于概率论的分类方法：朴素贝叶斯
   * 第5章 Logistic回归
   * 第6章 支持向量机
