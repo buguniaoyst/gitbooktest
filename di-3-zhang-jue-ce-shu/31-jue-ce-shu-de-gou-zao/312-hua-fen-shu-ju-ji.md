@@ -8,14 +8,14 @@
 
 ```py
 def splitDataSet(dataSet,axis,value):
-	retDataSet = []
-	for featVec in dataSet
-		if featVec[axis] == value:
-			reducedFeatVec = featVec[:axis]
-			reducedFeatVec.extend(featVec[axis+1:])
-			retDataSet.append(reducedFeatVec)
-	return retDataSet
+    retDataSet = []
+    for featVec in dataSet
+        if featVec[axis] == value:
+            reducedFeatVec = featVec[:axis]
+            reducedFeatVec.extend(featVec[axis+1:])
+            retDataSet.append(reducedFeatVec)
+    return retDataSet
 ```
 
-
+程序清单3-2的代码使用了三个输入参数：待划分的数据集，划分数据集的特征，特征的返回值。需要注意的是，Python语言不用考虑内存分配的问题。Python语言在函数中传递的是列表的引用，在函数内部对列表对象的修改，将会影响该列表对象的整个生存周期。为了消除这个不良影响，我们需要在函数的开始声明一个新列表对象。因为该函数代码在同一数据集上被调用多次，为了不修改原始数据集，创建一个新的列表对象。数据集这个列表中的各个元素也是列表，我们要遍历数据集中的每个元素，一旦发现符合要求的值，将其添加到新创建的列表中。在if语句中，程序将符合特征的数据抽取出来。后面讲述的更简单，这里我们可以这样理解这段代码：当我们按照某个特征划分数据集时，就需要将所有
 
