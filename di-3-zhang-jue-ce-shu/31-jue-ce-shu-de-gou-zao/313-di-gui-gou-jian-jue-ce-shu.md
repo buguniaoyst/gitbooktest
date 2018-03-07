@@ -28,21 +28,39 @@ def majorityCnt(classList):
 
 ```py
 def createTree(dataSet,labels):
-	classList = [example[-1] for example in dataSet]
-	if classList.count(classList[0]) == len(classList):
-		return classList[0]
-	if len(dataSet[0]) == 1:
-		return majorityCnt(classList)
-	bestFeat = chooseBestFeatureToSplit(dataSet)
-	bestFeatLabel = labels[bestFeat]
-	myTree = {bestFeatLabel:{}}
-	del(labels[bestFeat])
-	featValues = [example[bestFeat] for example in dataSet]
-	uniqueVals = set(featValues)
-	for value in uniqueVals:
-		subLabels = labels[:]
-		myTree[bestFeatLabel][value] = createTree(splitDataSet(dataSet,bestFeat,value),subLabels)
-	return myTree
+    classList = [example[-1] for example in dataSet]
+    if classList.count(classList[0]) == len(classList):
+        return classList[0]
+    if len(dataSet[0]) == 1:
+        return majorityCnt(classList)
+    bestFeat = chooseBestFeatureToSplit(dataSet)
+    bestFeatLabel = labels[bestFeat]
+    myTree = {bestFeatLabel:{}}
+    del(labels[bestFeat])
+    featValues = [example[bestFeat] for example in dataSet]
+    uniqueVals = set(featValues)
+    for value in uniqueVals:
+        subLabels = labels[:]
+        myTree[bestFeatLabel][value] = createTree(splitDataSet(dataSet,bestFeat,value),subLabels)
+    return myTree
+```
+
+程序清单3-4的代码使用两个输入参数：数据集合标签列表。标签列表包含了数据集中所有特征的标签，算法本身并不需要这个变量，但是为了给出数据明确的含义，我们将他作为一个输入参数提供。此外，前面提到的对数据集的要求依然满足。上述代码首先创建了名为classList的列表变量，其中包含了数据集的所有标签。递归函数的第一个停止条件是所有的类标签完全相同，则直接返回该类标签。递归函数的第二个停止条件是使用完了所有特征，仍然不能将数据集划分成仅包含唯一类别的分组。由于第二个条件无法简单滴返回唯一的类别标签，这里使用程序清单3-3的函数挑选出现次数最多的类别作为返回值。
+
+下一步程序开始创建树，这里使用Python语言的字典类型存储树的信息，当然也可以声明特殊的数据类型存储树，但是这里完全没有必要。字典变量myTree存储了树的所有信息，这对于其后绘制树形图非常重要。当前数据集选取的最好特征存储在变量bestFeat中，得到列表包含的所有属性值。这部分代码与程序清单3-3中的部分代码类似，这里就不再进一步解释了。
+
+最后代码遍历当前选中特征包含的所有属性值，在每个数据集划分上递归调用函数createTree\(\)，得到的返回值将被插入到字典变量myTree中，因此函数终止执行时，字典中将会潜逃很多代表叶子节点信息的字典数据。在解释这个字典数据之前，我们先看一下循环的第一行subLabels = labels\[:\]，这行 代码复制了类标签，并将其存储在新列表变量subLabels中。之所以这样做，是因为在Python语言中函数参数是列表类型时，参数是按照引用方式传递的。为了保证每次调用函数createTree\(\)时不改变原始列表的内容，使用新变量subLabels代替原始列表。
+
+现在我们可以测试上面代码的实际输出结果，执行下面的命令：
+
+```py
+>>> reload(trees)
+<module 'trees' from 'G:\\Python\\test\\决策树\\trees.py'>
+>>> myData,labels = trees.createDataSet()
+>>> myTree = trees.createTree(myData,labels)
+>>> myTree
+{'no surfacing': {0: 'no', 1: {'flippers': {0: 'no', 1: 'yes'}}}}
+>>>
 ```
 
 
