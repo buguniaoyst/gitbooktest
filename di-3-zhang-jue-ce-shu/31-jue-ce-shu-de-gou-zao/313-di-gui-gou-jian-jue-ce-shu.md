@@ -10,5 +10,15 @@
 
 打开文本编辑器，在增加下面的函数之前，在trees.py文件顶部增加一行代码：import operator,然后添加下面的代码到trees.py文件中：
 
+```py
+def majorityCnt(classList):
+	classCount = {}
+	for vote in classList:
+		if vote not in classCount.keys():classCount[vote] = 0
+		classCount[vote] += 1
+	sortedClassCount = sorted(classCount.iteritems(),key=operator.itemgetter(1),reverse=True)
+	return sortedClassCount[0][0]
+```
+
 
 
