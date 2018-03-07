@@ -38,5 +38,7 @@ def splitDataSet(dataSet,axis,value):
 [1, 2, 3, 4, 5, 6]
 ```
 
+则得到一个包含a和b所有元素的列表。
 
+我们可以在前面的简单样本数据上测试函数splitDataSet\(\)。首先还是要讲程序清单3-2的代码增加到trees.py文件中，然后在Python命令提示符内输入下述命令：
 
