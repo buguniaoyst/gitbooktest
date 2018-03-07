@@ -22,18 +22,35 @@
 from math import log
 
 def calcShannonEnt(dataSet):
-	numEntries = len(dataSet)
-	lebelCounts = {}
-	for featVec in dataSet:
-		currentLabel = featVec[-1]
-		if currentLabel not in labelCounts.keys():
-			labelCounts[currentLabel] = 0
-			labelCounts[currentLabel] += 1
-		shannonEnt = 0.0
-		for key in labelCounts:
-			prob = float(labelCounts[key])/numEntries
-			shannonEnt -= prob * log(prob,2)
-		return shannonEnt
+    numEntries = len(dataSet)
+    lebelCounts = {}
+    for featVec in dataSet:
+        currentLabel = featVec[-1]
+        if currentLabel not in labelCounts.keys():
+            labelCounts[currentLabel] = 0
+            labelCounts[currentLabel] += 1
+        shannonEnt = 0.0
+        for key in labelCounts:
+            prob = float(labelCounts[key])/numEntries
+            shannonEnt -= prob * log(prob,2)
+        return shannonEnt
+```
+
+程序清单3-1的代码非常简单。首先，计算数据集中实例的总数。我们也可以在需要时再计算这个值，但是由于代码中多次用到这个值，为了提高代码效率，我们显式地声明一个变量保存实例总数。然后，创建一个数据字典，它的键值是最后一列的数值。如果当前键值不存在，则扩展字典并将当前键值加入字典。每个键值都记录了当前类别出现的次数。最后，使用所有类标签的发生频率计算类别出现的频率。我们将这个概率计算香农熵，统计所有类标签发生的次数。下面我们看看如何使用熵划分数据集。
+
+在trees.py文件中，我们可以利用createDataSet\(\)函数得到列表3-1所示的简单鱼鉴定数据集，你可以输入自己的createDataSet\(\)函数：
+
+```py
+def createDataSet():
+	dataSet = [
+				[1,1,'yes'],
+				[1,1,'yes'],
+				[1,0,'no'],
+				[0,1,'no'],
+				[0,1,'no']
+				]
+	labels = ['no surfacing','flippers']
+	return dataSet,labels
 ```
 
 
