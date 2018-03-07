@@ -61,22 +61,40 @@ def splitDataSet(dataSet,axis,value):
 
 ```py
 def chooseBestFeatureToSplit(dataSet):
-	numFeatures = len(dataSet[0]) - 1
-	baseEntropy = calcShannonEnt(dataSet)
-	bestInfoGain = 0.0; bestFeature = -1
-	for i in range(numFeatures):
-		featList = [example[i] for example in dataSet]
-		uniqueVals = set(featList)
-		newEntropy = 0.0
-		for value in uniqueVals:
-			subDataSet = splitDataSet(dataSet,i,value)
-			prob = len(subDataSet)/float(len(dataSet))
-			newEntropy += prob * calcShannonEnt(subDataSet)
-		infoGain = baseEntropy = newEntropy
-		if(infoGain > bestInfoGain):
-			bestInfoGain = infoGain
-			bestFeature = i
-	return bestFeature
+    numFeatures = len(dataSet[0]) - 1
+    baseEntropy = calcShannonEnt(dataSet)
+    bestInfoGain = 0.0; bestFeature = -1
+    for i in range(numFeatures):
+        featList = [example[i] for example in dataSet]
+        uniqueVals = set(featList)
+        newEntropy = 0.0
+        for value in uniqueVals:
+            subDataSet = splitDataSet(dataSet,i,value)
+            prob = len(subDataSet)/float(len(dataSet))
+            newEntropy += prob * calcShannonEnt(subDataSet)
+        infoGain = baseEntropy = newEntropy
+        if(infoGain > bestInfoGain):
+            bestInfoGain = infoGain
+            bestFeature = i
+    return bestFeature
+```
+
+程序清单3-3给出了函数chooseBestFeatureToSplit\(\)的完整代码，该函数实现选取特征，划分数据集，计算得出最好的划分数据集的特征。函数chooseBestFeatureToSplit\(\)使用了程序清单3-1和程序清单3-2中的函数。在函数中调用的数据需要满足一定的要求：第一个要求是，数据必须是一种由列表元素组成的列表，而且所有的列表元素都要具有相同的数据长度；第二个要求是，数据的最后一列或者每个实例的最后一个元素是当前实例的类别标签。数据集一旦满足上述要求，我们就可以在函数的第一行判定当前数据集包含多少特征属性。我们无需限定list中的数据类型，它们既可以是数字也可以是字符串，并不影响实际计算。
+
+在开始划分数据集之前，程序清单3-3的第3行代码计算了整个数据集的原始香农熵，我们保存 最初的无序度量值，用于与划分完之后的数据集计算的熵值进行比较。第1个for循环遍历数据集中的所有特征。使用列表推导（List Comprehension）来创建新的列表，将数据集中所有第i个特征值或者所有可能存在的值写入这个新list中。然后使用Python语言原生的集合（set）数据类型。集合数据类型与列表数据类型相似，不同之处仅在于集合类型中的每个值互不相同。从列表中创建集合时Python语言得到列表中唯一元素值的最快方法。遍历当前特征中的所有唯一属性值，对每个特征划分一次数据集，然后计算数据集中的新熵值，并对所有唯一特征值，对每个特征划分一次数据集，然后计算数据集的新熵值，并对所有唯一特征值得到的熵求和。信息增益是熵的减少或者数据无需度的减少，大家肯定对于将熵用于度量数据无序的减少更容易理解。最后，比较所有特征中的信息增益，返回最好特征划分的索引值。
+
+现在我们可以测试上面代码的实际输出结果，首先将程序清单3-3的内容输入到文件trees.py中，然后在Python命令提示符下输入下列命令：
+
+```py
+>>> from imp import reload
+>>> reload(trees)
+<module 'trees' from 'G:\\Python\\test\\决策树\\trees.py'>
+>>> myData,labels = trees.createDataSet()
+>>> trees.chooseBestFeatureToSplit(myData)
+0
+>>> myData
+[[1, 1, 'yes'], [1, 1, 'yes'], [1, 0, 'no'], [0, 1, 'no'], [0, 1, 'no']]
+>>>
 ```
 
 
