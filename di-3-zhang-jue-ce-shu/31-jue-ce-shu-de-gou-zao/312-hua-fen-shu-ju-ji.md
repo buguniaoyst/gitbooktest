@@ -29,5 +29,14 @@ def splitDataSet(dataSet,axis,value):
 [1, 2, 3, [4, 5, 6]]
 ```
 
+如果执行a.append\(b\)，则列表得到了第四个元素，而且第四个元素也是一个列表。然而如果使用extend方法：
+
+```py
+>>> a=[1,2,3]
+>>> a.extend(b)
+>>> a
+[1, 2, 3, 4, 5, 6]
+```
+
 
 
